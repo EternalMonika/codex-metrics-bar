@@ -1,0 +1,21 @@
+{
+  "name": "codex-metrics-bar",
+  "interface": {
+    "displayName": "Codex Metrics Bar"
+  },
+  "plugins": [
+    {
+      "name": "codex-metrics-bar",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/EternalMonika/codex-metrics-bar.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

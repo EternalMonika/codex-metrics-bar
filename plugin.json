@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "codex-metrics-bar",
+  "version": "0.2.4",
+  "description": "在 Windows Codex 桌面窗口底部显示本地会话的轮次、步骤、Token、缓存与上下文指标。",
+  "author": { "name": "Local Codex Tools" },
+  "repository": "https://github.com/EternalMonika/codex-metrics-bar",
+  "extensions": {
+    "com.openai": {
+      "hooks": "./hooks/hooks.json",
+      "interface": {
+        "displayName": "Codex 指标栏",
+        "shortDescription": "桌面实时会话指标",
+        "longDescription": "在 Windows Codex 桌面窗口底部展示当前会话的轮次、步骤、输出速度、Token 用量、缓存命中率和上下文占用。所有数据只在本机读取。",
+        "developerName": "Local Codex Tools",
+        "category": "Developer Tools",
+        "capabilities": [],
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

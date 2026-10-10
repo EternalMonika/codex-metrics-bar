@@ -1,0 +1,30 @@
+{
+  "description": "启动 Windows Codex 会话指标悬浮栏。",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${PLUGIN_ROOT}/hooks/start.py\"",
+            "commandWindows": "python \"${PLUGIN_ROOT}/hooks/start.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${PLUGIN_ROOT}/hooks/start.py\"",
+            "commandWindows": "python \"${PLUGIN_ROOT}/hooks/start.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
