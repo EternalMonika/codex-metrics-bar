@@ -6,9 +6,35 @@
 
 插件只读取本机 `~/.codex/sessions` 中的会话 JSONL 统计事件，不使用 API Key，也不上传会话内容。
 
+## 设计灵感与实际效果
+
+指标栏的视觉灵感来自 DS 的指标展示样式；后四张图展示本插件在 Codex 中的实际效果。
+
+### 灵感来源
+
+![DS 指标栏灵感参考](assets/screenshots/inspiration-ds.png)
+
+### 本插件实际效果
+
+悬浮指标栏：
+
+![Codex 指标栏悬浮胶囊](assets/screenshots/actual-metrics-bar.png)
+
+会话统计卡片：
+
+![会话统计卡片](assets/screenshots/actual-session-stats.png)
+
+Token 用量卡片：
+
+![Token 用量卡片](assets/screenshots/actual-token-usage.png)
+
+上下文用量与分类：
+
+![上下文用量与输入分类](assets/screenshots/actual-context-breakdown.png)
+
 ## 安装
 
-需要 Windows、已安装的 Codex 桌面版，以及可通过 `python` 命令启动的 Python 3.10+（含 Tkinter）。在本项目根目录执行：
+需要 Windows、已安装的 Codex 桌面版，以及可通过 `python` 命令启动的 Python 3.10+（含 Tkinter）。在 PowerShell 中执行：
 
 ```powershell
 git clone https://github.com/EternalMonika/codex-metrics-bar.git "$env:USERPROFILE\codex-metrics-bar"
